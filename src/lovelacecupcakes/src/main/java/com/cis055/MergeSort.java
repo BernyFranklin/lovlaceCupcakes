@@ -7,12 +7,12 @@ public class MergeSort {
   private static int count = 0;
 
   public static void main(String[] args) {
+    //String fileName =
+    //"/Users/frankbernal/Documents/GitHub/sjccFall22/lovlaceCupcakes/src/lovelacecupcakes/src/main/java/com/cis055/cupcake_3906.json";
     String fileName =
-      "/Users/jerom/Documents/GitHub/class-java/sort/demo/src/main/java/com/sort/cupcake_3906.json";
+      "/Users/frankbernal/Documents/GitHub/sjccFall22/lovlaceCupcakes/src/lovelacecupcakes/src/main/java/com/cis055/cupcake_test_10.json";
     // String fileName =
-    //   "/Users/jerom/Documents/GitHub/class-java/sort/demo/src/main/java/com/sort/cupcake_10.json";
-    // String fileName =
-    //   "/Users/jerom/Documents/GitHub/class-java/sort/demo/src/main/java/com/sort/cupcake_test.json";
+    //   "/Users/frankbernal/Documents/GitHub/sjccFall22/lovlaceCupcakes/src/lovelacecupcakes/src/main/java/com/cis055/cupcake_test_5.json";
 
     // read cupcake names
     JSONArray cupcakeArray = JSONFile.readArray(fileName);
