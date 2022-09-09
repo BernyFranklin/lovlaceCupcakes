@@ -1,3 +1,11 @@
+/*
+ * lovelaceCupcakes 
+ * Frank Bernal
+ * CIS-055 Data Structures
+ * Date Started:  08SEP2022
+ * Date Finished: 09SEP2022
+ */
+
 package com.cis055;
 
 // Using json editing library
@@ -5,13 +13,16 @@ import org.json.simple.*;
 
 // Start class
 public class InsertionSort {
+    // Count variable to count how many passes the algorithm makes
     private static int count = 0;
+
+    // Main program
     public static void main( String[] args ) {
 
         // 3 different files available. Uncomment to use.
         String fileName =
-        // "/Users/frankbernal/Documents/GitHub/sjccFall22/lovlaceCupcakes/src/lovelacecupcakes/src/main/java/com/cis055/cupcake_3906.json";
-         "/Users/frankbernal/Documents/GitHub/sjccFall22/lovlaceCupcakes/src/lovelacecupcakes/src/main/java/com/cis055/cupcake_test_10.json";
+         "/Users/frankbernal/Documents/GitHub/sjccFall22/lovlaceCupcakes/src/lovelacecupcakes/src/main/java/com/cis055/cupcake_3906.json";
+        // "/Users/frankbernal/Documents/GitHub/sjccFall22/lovlaceCupcakes/src/lovelacecupcakes/src/main/java/com/cis055/cupcake_test_10.json";
         // "/Users/frankbernal/Documents/GitHub/sjccFall22/lovlaceCupcakes/src/lovelacecupcakes/src/main/java/com/cis055/cupcake_test_5.json";
 
         // read cupcake names
@@ -36,7 +47,7 @@ public class InsertionSort {
         System.out.printf("Count = %d\n", count);
     }
 
-    // print cupcake array
+    // print cupcake array method
     public static void print(String[] cupcakeNameArray) {
         System.out.printf("Number\tName\n");
         System.out.printf("------\t---------------\n");
@@ -45,7 +56,7 @@ public class InsertionSort {
         }
     }
 
-    // get array of cupcake names
+    // get array of cupcake names method
     public static String[] nameArray(JSONArray cupcakeArray) {
         String[] arr = new String[cupcakeArray.size()];
 
@@ -57,7 +68,8 @@ public class InsertionSort {
         }
         return arr;
     }
-    // insertionSort implements my version of insertion sorting
+
+    // insertionSort method implements my version of insertion sorting
     public static String[] insertionSort (String[] arr) {
         // Iterate through each item in array
         for (int i = 1; i < arr.length; i++) {
@@ -82,7 +94,7 @@ public class InsertionSort {
         return arr;
     }
     
-    // swap swaps places of two indexes in an array
+    // swap method swaps places of two indexes in an array
     public static String[] swap (String[] arr, int i, int j) {
         String temp = "";
         temp = arr[i];
@@ -92,3 +104,7 @@ public class InsertionSort {
         return arr;
     }
 }
+
+/*
+ *  LoVeLaCe CuPcAkEs
+ */
